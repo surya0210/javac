@@ -19,7 +19,7 @@
         },
         {
             "type": "java"   ,
-            "name": "Varia bles",
+            "name": "Variables",
             "request": "launch",
             "mainClass": "Variables",
             "projectName": "javac_704fe02a"
