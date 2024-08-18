@@ -1,0 +1,78 @@
+How Java works?
+
+in our machine we have JVM irrespective of OS. 
+We have hardware on top we have OS on top we have JVM.
+Our code directly work on a hardware.So JVM wont understand the code which code we write.
+JVM accepts byte code.
+Java code ---------> Byte code (this process will be done by compiler)
+Out of 10,000 files JVM will run only one file which has main method (public static void main)
+
+
+There is something called JRE which helps to run the code (JVM+librariers is inside JRE)
+
+we installed JDK but its not requried JDK is there any other system (WORA->Write once run anywhere given JRE is there in the system)
+
+
+Java is a stronly typed language (we need to mention the type of the variable while initalizing)
+
+
+Data types
+Primitive -> Int(byte,short,int,long),float(float,double),char,boolean;
+
+int->4 bytes
+long->8 bytes
+short->2 bytes 
+byte->1 byte (-128 to 127)
+
+
+float => 4 bytes (if we need to use float we need to explicitly mention float)
+double => 8 bytes (default)
+
+char ->2 bytes represented by ''
+
+boolean -> true or false
+
+when you add string to number it iwll be string 
+
+
+
+access return type function name()
+
+public void         main()
+
+
+className object_name=new Class()
+
+
+JDK
+
+JVM->place where you will run the code
+
+JRE->extra libraies+our code(JVM)
+
+
+objects will be stored in heap memory
+local variables will be stored in stack.(lifo)
+The address of the object where it is getting called will b stored in the stack where the local variables are stored.
+
+
+
+Array:
+Jagged array:when we dont know the size of columns
+Drawbacks:The size is fixed,type is fixed
+
+Strings:if we create same string and set to 2 variables then it will not create 2 variabls.
+
+In Java Heap memory there is String constant pool and all strings will be saved
+string is immutable cant be changed.thats why we use stringbuffer/string builder
+
+
+Class varibales will be defined by Static before them and htey should be called with the class name not the obj name and they will be stored as string in the different area in jvm and all the objects will be mapped to it
+
+Static method will be called first in a object irrespective of the constructor
+
+Constructor will be written like public ClassName(){}
+
+to just load a class without creating object we use class.forName(<className>)
+
+if we need to use static method for non-class variables then we need to pass the obj
