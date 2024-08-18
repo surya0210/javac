@@ -3,7 +3,7 @@ class Human{
     String name;
 }
 
-public class Encasulation {
+public class Encapsulation {
 
     static{
         System.out.println("ddfdf");
